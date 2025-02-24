@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    height:  50px; 
+    background-color: #2dc3dd;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-inline: 30px;
+    position: sticky;
+    top: 0;
+}
+
+video {
+    padding-top: 20PX;
+    width: 700px;
+    height: auto;
+    align-content: center;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tachi-header {
+    font-size: 30px;
+}
+
+.tachiyomi-logo, .right {
+    display: none;
+}
+
+.manga {
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 16px;
+
+}
+
+.books {
+    color: black;
+    padding: 1rem;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid gray;
+    background-color: #7ac4d1;
+}
+
+.manga-image {
+    width: 50%;
+    margin-inline: auto;
+    display: block;
+}
+
+.description {
+    padding-left: 16px;
+}
+
+footer {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    background-color: #2dc3dd;
+    padding: 20px;
+    text-align: center;
+}
+
+span a {
+    color: blue;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .tachiyomi-logo {
+        display: block;
+        max-width: 40px;
+    }
+
+    .right {
+        display: flex;
+        gap: 27px;
+    }
+
+    .tachi-header {
+        display: none;
+    }
+
+    p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .manga {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    .manga {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
